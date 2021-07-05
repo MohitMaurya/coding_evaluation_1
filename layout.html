@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        #parent {
+            width: 60%;
+            height: 639px;
+            margin: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #row1 {
+            width: 100%;
+            height: 36%;
+        }
+
+        #row1>#text_block {
+            width: 100%;
+            height: 8%;
+            text-align: center;
+        }
+
+        #text_block p,
+        #text_r2>#service {
+            color: orangered;
+            font-size: 8px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #text_block h3,
+        #text_r2 h3 {
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+
+        #row1>#image_block {
+            width: 100%;
+            height: 92%;
+            margin-top: 30px;
+        }
+
+        .images {
+            width: 30%;
+            float: left;
+            margin: 1.5%;
+            height: 100%;
+        }
+
+        .images>.img {
+            background-image: url("https://via.placeholder.com/243x130");
+            width: 100%;
+            height: 130px;
+            background-size: cover;
+        }
+
+        .date,
+        .heading_r3~p {
+            color: gray;
+            font-size: 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .date+p {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        #row2 {
+            width: 100%;
+            height: 28%;
+            margin-bottom: 10px;
+        }
+
+        #row2>#button {
+            background-color: orangered;
+            width: 100px;
+            height: 30px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #button>p {
+            margin: 0px;
+            font-size: 10px;
+            padding-top: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        #text_r2 {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        #row3 {
+            width: 100%;
+            height: 28%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, fr);
+            grid-gap: 10px;
+            margin: 10px;
+            margin-top: 5px;
+
+        }
+
+        .grid1>.logo {
+            float: left;
+            width: 20%;
+            height: 60%;
+            background-image: url(https://via.placeholder.com/50);
+            background-size: cover;
+        }
+
+        .grid1>.text_r3 {
+            float: left;
+            width: 80%;
+            height: 100%;
+        }
+
+        .text_r3>.heading_r3 {
+            margin-top: 0px;
+            font-size: 14px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+
+        .heading_r3~p {
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        @media (max-width:1080px) {
+            .images>.img {
+                background-image: url("https://via.placeholder.com/143x130");
+                width: 100%;
+                height: 130px;
+            }
+
+            .grid1>.logo {
+                width: 40%;
+                height: 50%;
+                background-image: url(https://via.placeholder.com/25);
+            }
+
+            .grid1>.text_r3 {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div id="parent">
+            <div id="row1">
+                <div id="text_block">
+                    <p>
+                        NEWS & UPDATE
+                    </p>
+                    <h3>
+                        Our Blog Posts
+                    </h3>
+                </div>
+                <div id="image_block">
+                    <div class="images">
+                        <div class="img"></div>
+                        <p class="date">29, January 2019</p>
+                        <p>Architectural Art Modern</p>
+                    </div>
+                    <div class="images">
+                        <div class="img"></div>
+                        <p class="date">29, January 2019</p>
+                        <p>Architectural Art Modern</p>
+                    </div>
+                    <div class="images">
+                        <div class="img"></div>
+                        <p class="date">29, January 2019</p>
+                        <p>Architectural Art Modern</p>
+                    </div>
+                </div>
+            </div>
+            <div id="row2">
+                <div id="button">
+                    <p>View All Posts</p>
+                </div>
+                <div id="text_r2">
+                    <p id="service">SERVICES</p>
+                    <h3>Our Services</h3>
+                    <p class="date">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est nunc, hendrerit
+                        facilisis
+                        luctus et<br>, eleifend vel
+                        lectus.</p>
+                </div>
+            </div>
+            <div id="row3">
+                <div class="grid1">
+                    <div class="logo">
+                    </div>
+                    <div class="text_r3">
+                        <p class="heading_r3">Innovative Structure</p>
+                        <p>Integer sed nunc odio. Integer iaculis diam scelerisque tortor aliquam, quis sollicitudin sem
+                            aliquam</p>
+                    </div>
+                </div>
+                <div class="grid1">
+                    <div class="logo">
+                    </div>
+                    <div class="text_r3">
+                        <p class="heading_r3">Architecture Design</p>
+                        <p>Integer sed nunc odio. Integer iaculis diam scelerisque tortor aliquam, quis sollicitudin sem
+                            aliquam</p>
+                    </div>
+                </div>
+                <div class="grid1">
+                    <div class="logo">
+                    </div>
+                    <div class="text_r3">
+                        <p class="heading_r3">Interior Design</p>
+                        <p>Integer sed nunc odio. Integer iaculis diam scelerisque tortor aliquam, quis sollicitudin sem
+                            aliquam</p>
+                    </div>
+                </div>
+                <div class="grid1">
+                    <div class="logo">
+                    </div>
+                    <div class="text_r3">
+                        <p class="heading_r3">Innovative Structure</p>
+                        <p>Integer sed nunc odio. Integer iaculis diam scelerisque tortor aliquam, quis sollicitudin sem
+                            aliquam</p>
+                    </div>
+                </div>
+                <div class="grid1">
+                    <div class="logo">
+                    </div>
+                    <div class="text_r3">
+                        <p class="heading_r3">Modern Window Design</p>
+                        <p>Integer sed nunc odio. Integer iaculis diam scelerisque tortor aliquam, quis sollicitudin sem
+                            aliquam</p>
+                    </div>
+                </div>
+                <div class="grid1">
+                    <div class="logo">
+                    </div>
+                    <div class="text_r3">
+                        <p class="heading_r3">Expert Architect</p>
+                        <p>Integer sed nunc odio. Integer iaculis diam scelerisque tortor aliquam, quis sollicitudin sem
+                            aliquam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</body>
+
+</html>
